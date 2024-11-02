@@ -28,7 +28,7 @@ out/
 
 ### NetBeans ###
 /nbproject/private/
-/nbbuild/
+!/nbbuild/libs
 /dist/
 /nbdist/
 /.nb-gradle/
