@@ -1,27 +1,27 @@
-# Usar una imagen base de Java
+# Use an official OpenJDK runtime as a parent image
 FROM openjdk:17-jdk-alpine
 
-# Establecer el directorio de trabajo
+# Set the working directory
 WORKDIR /app
 
-# Copiar el archivo de construcción de Gradle
+# Copy the Gradle build files
 COPY gradlew .
 COPY gradle gradle
 COPY build.gradle .
 COPY settings.gradle .
 COPY src src
 
-# Dar permisos de ejecución al script gradlew
+# Give execution permission to the gradlew script
 RUN chmod +x gradlew
 
-# Construir la aplicación
+# Build the application
 RUN ./gradlew build
 
-# Copiar el archivo JAR generado
+# Copy the generated JAR file
 COPY build/libs/mutant-detector-0.0.1-SNAPSHOT.jar app.jar
 
-# Exponer el puerto en el que la aplicación escucha
+# Expose the port the app runs on
 EXPOSE 8080
 
-# Comando para ejecutar la aplicación
+# Run the application
 CMD ["java", "-jar", "app.jar"]

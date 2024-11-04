@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.mutantdetector.service.DnaServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-02T20:56:33" hostname="DESKTOP-KIG3FO2" time="0.402">
+<testsuite name="com.example.mutantdetector.service.DnaServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-04T03:28:27" hostname="DESKTOP-KIG3FO2" time="0.29">
   <properties/>
-  <testcase name="testIsMutant()" classname="com.example.mutantdetector.service.DnaServiceTest" time="0.39"/>
-  <testcase name="testIsNotMutant()" classname="com.example.mutantdetector.service.DnaServiceTest" time="0.004"/>
-  <testcase name="testInvalidDna()" classname="com.example.mutantdetector.service.DnaServiceTest" time="0.006"/>
+  <testcase name="testIsMutant()" classname="com.example.mutantdetector.service.DnaServiceTest" time="0.275"/>
+  <testcase name="testIsNotMutant()" classname="com.example.mutantdetector.service.DnaServiceTest" time="0.007"/>
+  <testcase name="testInvalidDna()" classname="com.example.mutantdetector.service.DnaServiceTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
